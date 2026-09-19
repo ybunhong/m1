@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./App.css";
 
 function StatusBadge({ isOpenToWork }) {
@@ -18,11 +17,13 @@ function App() {
   const goal =
     "I want to build practical web apps and learn React so I can launch my career in software development.";
 
+  const gitHubRepo = "https://github.com/ybunhong/m1";
   return (
     <main className="profile-page">
       <section className="profile-card">
         <h1>{name}</h1>
         <p className="goal-text">Goal: {goal}</p>
+        <p className="github">Public: {gitHubRepo}</p>
         <StatusBadge isOpenToWork={true} />
       </section>
     </main>
